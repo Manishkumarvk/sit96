@@ -1,0 +1,14 @@
+# Use official Java JDK image
+FROM eclipse-temurin:21-jdk
+
+# Set working directory inside container
+WORKDIR /app
+
+# Copy Java source file
+COPY loginapp.java .
+
+# Compile the Java program
+RUN javac loginapp.java
+
+# Default command to run Java program
+CMD ["java", "loginapp"]
