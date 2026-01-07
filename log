@@ -37,3 +37,4 @@ public class LoginApp {
         System.out.println("Server running at http://localhost:4080");
     }
 }
+docker run -p 4080:4080 login-web-app
